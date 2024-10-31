@@ -1,0 +1,40 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #2e7d32; /* Verde oscuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Secciones principales */
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-left: 5px solid #2e7d32; /* Línea verde a la izquierda */
+}
+
+/* Títulos de sección */
+h2 {
+    color: #2e7d32;
+}
+
+/* Pie de página */
+footer {
+    background-color: #2e7d32;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
