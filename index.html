@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Comparación de Emisiones de CO2</title>
+    <title>Mi Sitio Web</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Página Principal</h1>
+    <nav>
+        <select id="select-year">
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+        </select>
+    </nav>
     <div class="chart-container">
         <canvas id="myChart"></canvas>
     </div>
+    <nav>
+        <a href="seccion1.html">Sección 1</a>
+        <a href="seccion2.html">Sección 2</a>
+    </nav>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
