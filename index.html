@@ -1,32 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desarrollo Sostenible - Reforestación</title>
+<html>
+<head>
+    <title>Comparación de Emisiones de CO2</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Barra de navegación -->
-    <header>
-        <nav>
-            <div class="logo">Proyecto COP16</div>
-            <ul>
-                <li><a href="#introduccion">Introducción</a></li>
-                <li><a href="#problema">Problema</a></li>
-                <li><a href="#solucion">Solución</a></li>
-                <li><a href="#objetivos">Objetivos</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Sección principal -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>La reforestación y agricultura regenerativa para la captura de carbono</h1>
-            <p>Una solución sostenible inspirada en los objetivos de la COP16 para combatir el cambio climático.</p>
-            <a href="#mas-info" class="main-button">Más Información</a>
-        </div>
-    </section>
+    <div class="chart-container">
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
