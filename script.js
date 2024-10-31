@@ -1,9 +1,9 @@
-// script.js
+// Obtener el contexto del canvas
 const ctx = document.getElementById('myChart').getContext('2d');
 
 // Datos de ejemplo (reemplaza con tus datos)
-const labels = ['Tradicional', 'Orgánica', 'Precisión'];
-const data = [120, 65, 35];
+const labels = ['Enero', 'Febrero', 'Marzo'];
+const data = [12, 19, 3];
 
 // Crear el gráfico
 const myChart = new Chart(ctx, {
@@ -11,10 +11,10 @@ const myChart = new Chart(ctx, {
     data: {
         labels: labels,
         datasets: [{
-            label: 'Emisiones de CO2 (toneladas/ha)',
+            label: 'Ventas',
             data: data,
-            backgroundColor: '#336633', // Verde oscuro
-            borderColor: '#336633',
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
             borderWidth: 1
         }]
     },
@@ -25,4 +25,15 @@ const myChart = new Chart(ctx, {
             }
         }
     }
+});
+
+// Obtener el elemento del menú
+const selectYear = document.getElementById('select-year');
+
+// Agregar un event listener para detectar cambios en el menú
+selectYear.addEventListener('change', () => {
+  const selectedYear = selectYear.value;
+
+  // Aquí actualizarías los datos del gráfico según el año seleccionado
+  // ... (código para obtener los nuevos datos y actualizar el gráfico)
 });
