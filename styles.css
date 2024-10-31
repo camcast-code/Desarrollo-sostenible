@@ -1,40 +1,103 @@
 /* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
     color: #333;
-    background-color: #f4f4f4;
 }
 
-/* Encabezado */
+/* Barra de navegación */
 header {
-    background-color: #2e7d32; /* Verde oscuro */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Secciones principales */
-section {
-    padding: 20px;
-    margin: 10px 0;
-    background-color: #fff;
-    border-left: 5px solid #2e7d32; /* Línea verde a la izquierda */
-}
-
-/* Títulos de sección */
-h2 {
-    color: #2e7d32;
-}
-
-/* Pie de página */
-footer {
-    background-color: #2e7d32;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
     position: fixed;
     width: 100%;
-    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00a859; /* color verde */
+}
+
+/* Sección principal */
+.hero {
+    height: 100vh;
+    background: url('tu-imagen-de-fondo.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.main-button {
+    background-color: #00a859; /* color verde */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.main-button:hover {
+    background-color: #007a45;
 }
